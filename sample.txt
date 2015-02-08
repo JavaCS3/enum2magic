@@ -1,0 +1,26 @@
+---
+# output file
+target_name: out.txt
+
+# output template (see python 'string.format' input syntax) 
+target_template: {element:<20} = {value:#x}; {comment}
+
+# this key will remove the each enum's element prefix
+ignore_prefix: Month_
+---
+
+enum {
+   Month_January = 0, // start from zero
+   // some comment
+   Month_February,
+   Month_March,
+   Month_April,
+   Month_June,
+   // some comment
+   Month_July,
+   Month_August,
+   Month_September,
+   Month_October,
+   Month_November,
+   Month_December
+}
